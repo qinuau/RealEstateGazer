@@ -133,7 +133,7 @@ sources.each do |source|
   end
 end
 
-conf = YAML.load(File.read('conf.yml'))
+conf = YAML.load(File.read(File.dirname(__FILE__) + '/conf.yml'))
 
 if result != ''
   to = conf['conf']['email']
